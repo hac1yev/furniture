@@ -1,0 +1,22 @@
+.second-header{
+    background-color: #2d2626;
+    margin-bottom: 50px;
+}
+.second-header nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px 20px 49px;
+    list-style: none;
+}
+.second-header nav ul li{
+    padding-right: 100px;
+}
+.second-header nav ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+.second-header nav ul li a:hover{
+    color: #e5830b;
+    
+}
