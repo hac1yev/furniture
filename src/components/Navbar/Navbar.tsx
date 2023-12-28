@@ -6,6 +6,7 @@ import user from '../../assets/images/Header/user-icon.svg';
 import hamburger from '../../assets/images/Header/hamburger.svg';
 
 const Navbar = () => {
+    
   return (
         <header>
           <div className='header-top'>
@@ -24,7 +25,6 @@ const Navbar = () => {
             <img src={hamburger} alt="hamburger-icon" />
           </div>
           <nav className="navbar">
-            
             <ul className="links">
                 <Link to="/">
                     <li>Home</li>
