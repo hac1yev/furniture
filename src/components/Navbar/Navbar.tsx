@@ -1,21 +1,29 @@
 import { Link } from 'react-router-dom';
 import './Navbar.css';
+import search from '../../assets/images/Header/search.svg';
+import shopping from '../../assets/images/Header/shopping-icon.svg';
+import user from '../../assets/images/Header/user-icon.svg';
+import hamburger from '../../assets/images/Header/hamburger.svg';
 
 const Navbar = () => {
   return (
-    <>
         <header>
-    <div className="logo"><Link to="/"><strong>LogoOfBrand</strong></Link></div>
-        <div className="burger "><i className="ri-menu-line icon"></i></div>
-        <nav className="navbar">
-            <ul className="icons">
-                <Link to="">
-                    <li><i className="ri-account-circle-line icon" title="Account"></i></li>
-                </Link>
-                <Link to="">
-                    <li><i className="ri-shopping-basket-line icon" title="Shopping"></i></li>
-                </Link>
-            </ul>
+          <div className='header-top'>
+            <div className='header-left'>
+                <div>AZ</div>
+                <img src={search} alt="search-icon" />
+            </div>
+            <div className="logo"><Link to="/"><strong>HomeDecor</strong></Link></div>
+            <div className='header-right'>
+                <img src={shopping} alt="shopping-img" />
+                <img src={user} alt="shopping-img" />
+            </div>
+          </div>
+          <div className="burger">
+            <img src={hamburger} alt="hamburger-icon" />
+          </div>
+          <nav className="navbar">
+            
             <ul className="links">
                 <Link to="/">
                     <li>Home</li>
@@ -36,11 +44,8 @@ const Navbar = () => {
                     <li>Contact</li>
                 </Link>
             </ul>
-        </nav>
-    </header>
-
-        
-    </>
+          </nav>
+        </header> 
   )
 }
 
