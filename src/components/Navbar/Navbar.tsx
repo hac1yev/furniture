@@ -10,13 +10,13 @@ const Navbar = () => {
         <header>
           <div className='header-top'>
             <div className='header-left'>
-                <div>AZ</div>
-                <img src={search} alt="search-icon" />
+                <div className='lang'>Az</div>
+                <img className='search-icon' src={search} alt="search-icon" />
             </div>
             <div className="logo"><Link to="/"><strong>HomeDecor</strong></Link></div>
             <div className='header-right'>
-                <img src={shopping} alt="shopping-img" />
-                <img src={user} alt="shopping-img" />
+                <img className='shop-img' src={shopping} alt="shopping-img" />
+                <img className='user-img' src={user} alt="shopping-img" />
             </div>
           </div>
           <div className="burger">
