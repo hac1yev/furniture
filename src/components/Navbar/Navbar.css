@@ -1,6 +1,5 @@
 header {
-    background-color: rgb(255, 255, 255);
-    box-shadow: inset 0px -13px 25px -27px #000000;
+    background-color: #EAE6DF;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -9,12 +8,33 @@ header {
 
 }
 
+
+header .lang{
+    border-radius: 5px;
+    border: 1px solid  #D4C8BE;
+    color: #2D2D2B;
+    font-family:  'Raleway', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    padding: 5px;
+    
+}
+
+header ul a{
+    color: black;
+}
+
 .header-top {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
+}
+
+.header-top a{
+    color: black;
 }
 
 .header-left,
@@ -150,4 +170,13 @@ header {
         padding: 0;
         order: 2;
     }
+
+    
+}
+
+
+@media screen and (max-width: 767px){
+header .lang ,.shop-img , .user-img{
+    display: none;
+}
 }
