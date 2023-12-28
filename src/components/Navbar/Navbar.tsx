@@ -4,9 +4,15 @@ import search from '../../assets/images/Header/search.svg';
 import shopping from '../../assets/images/Header/shopping-icon.svg';
 import user from '../../assets/images/Header/user-icon.svg';
 import hamburger from '../../assets/images/Header/hamburger.svg';
+import { useState } from 'react';
 
 const Navbar = () => {
-    
+    const [openMenu, setOpenMenu] = useState(false)
+
+    const handleClick = () => {
+   setOpenMenu(prev => !prev)
+    }
+
   return (
         <header>
           <div className='header-top'>
@@ -22,9 +28,9 @@ const Navbar = () => {
           </div>
           <div className="burger">
             <img className='mobile-search-icon' src={search} alt="search-icon" />
-            <img src={hamburger} alt="hamburger-icon" />
+            <img onClick={handleClick} src={hamburger} alt="hamburger-icon" />
           </div>
-          <nav className="navbar">
+       { openMenu &&  <nav className="navbar">
             <ul className="links">
                 <Link to="/">
                     <li>Home</li>
@@ -45,7 +51,7 @@ const Navbar = () => {
                     <li>Contact</li>
                 </Link>
             </ul>
-          </nav>
+          </nav> }
         </header> 
   )
 }
