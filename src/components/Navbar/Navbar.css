@@ -182,5 +182,11 @@ header ul a{
 @media screen and (max-width: 767px){
 header .lang ,.shop-img , .user-img, .search-icon{
     display: none;
+    
+}
+
+.burger {
+    background-color: #EAE6DF;
 }
 }
+
