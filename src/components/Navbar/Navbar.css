@@ -47,8 +47,6 @@ header ul a{
     display: inline-block;
     padding: 10px;
     font-size: 1.5rem;
-    font-family: Mynerve, sans-serif;
-
 }
 
 .burger {
@@ -180,13 +178,16 @@ header ul a{
 
 
 @media screen and (max-width: 767px){
-header .lang ,.shop-img , .user-img, .search-icon{
-    display: none;
-    
-}
+    .shop-img , .user-img, .header-left {
+        display: none;
+        
+    }
 
-.burger {
-    background-color: #EAE6DF;
-}
+    .burger {
+        background-color: #EAE6DF;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
 }
 
