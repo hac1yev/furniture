@@ -20,6 +20,7 @@ const Navbar = () => {
             </div>
           </div>
           <div className="burger">
+            <img className='mobile-search-icon' src={search} alt="search-icon" />
             <img src={hamburger} alt="hamburger-icon" />
           </div>
           <nav className="navbar">

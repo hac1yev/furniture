@@ -174,9 +174,13 @@ header ul a{
     
 }
 
+.mobile-search-icon {
+    background-color: #EAE6DF;
+}
+
 
 @media screen and (max-width: 767px){
-header .lang ,.shop-img , .user-img{
+header .lang ,.shop-img , .user-img, .search-icon{
     display: none;
 }
 }
